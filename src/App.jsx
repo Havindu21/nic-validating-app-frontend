@@ -1,10 +1,20 @@
-import {} from "bootstrap/dist/css/bootstrap.css"
+import { Container, Row, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NICValidationComponent from './components/NICValidationComponent'
+import DashboardComponent from './components/DashboardComponent';
 
 function App() {
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <Container fluid>
+      <Row>
+        <Col lg={6} xs={12}>
+          <NICValidationComponent />
+        </Col>
+        <Col lg={6} xs={12}>
+          <DashboardComponent />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
