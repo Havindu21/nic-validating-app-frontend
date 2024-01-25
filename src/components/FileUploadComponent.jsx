@@ -42,7 +42,8 @@ function FileUploadComponent() {
     };
 
     return (
-        <div className="container mt-4">
+        <div className="container mt-5">
+              <h3 className=''>Upload your csv files to Validate NIC </h3>
             <div className="row">
                 <div className="col-md-12 mb-3">
                     <input
@@ -83,7 +84,7 @@ function FileUploadComponent() {
                 <div className="row mt-3">
                     <div className="col-md-12">
                         <div className="border p-3">
-                            <h4 className="mb-3">Response from the server:</h4>
+                            <h4 className="mb-3 text-center">Validated NICs</h4>
                             {response.map((item, index) => (
                                 <div key={index} className="mb-3">
                                     <p>

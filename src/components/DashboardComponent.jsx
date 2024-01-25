@@ -26,7 +26,7 @@ function DashboardComponent() {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-4">Dashboard</h2>
+      <h3 className="mb-4">Dashboard</h3>
       {dashboardDetails && (
         <div className="row">
           <div className="col-md-4 mb-4">
@@ -59,7 +59,7 @@ function DashboardComponent() {
           <div className="col-md-6 mb-4">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">Age Group Distribution</h5>
+                <h5 className="card-title text-center">Age Group Distribution</h5>
                 <div className="text-center">
                   <PieChart
                     data={pieChartData}
